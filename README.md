@@ -4,10 +4,11 @@
 
 Parses and visualizes data from a .seg file that contains Plethysmography, Pulse Rate, SpO2, Abdomen and Thorax expansion.
 Tested with files from Contec RS10. Comes with a small example dataset.
+Note that expansion signals are high-pass filtered in the ResMonPlus software, so the display will be slightly different.
+
+## File Structure
 
 The recording files are structured into 1-second segments, each containing multiple blocks of data. Each segment starts with a header and is followed by specific blocks of data.
-
-### Segment Structure
 
 Each segment has the following structure:
 
@@ -67,6 +68,5 @@ Each segment has the following structure:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
-
-For more details, refer to the source code and comments within the script.
+**Maintained by @chgayot at StepUp Solutions**
+For any custom development need, do not hesitate to contact us.
